@@ -16,7 +16,8 @@
           box-sizing: border-box;
 }
 
-*::before, *::after {
+*::before,
+*::after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
 }
@@ -204,6 +205,12 @@ body {
         grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: auto;
   }
+  .card .title {
+    font-size: 1.5rem;
+  }
+  .card .review {
+    font-size: 0.9rem;
+  }
   .card:nth-child(1) {
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
@@ -216,6 +223,9 @@ body {
     -ms-grid-row: 1;
     -ms-grid-row-span: 2;
     grid-row: 1/3;
+  }
+  .card:nth-child(5) .title {
+    font-size: 1.5rem;
   }
   .card:nth-child(4) {
     -ms-grid-column: 2;
